@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Parkour.unity
+    guid: 15e19d42eb696364bb1fd8318636b388
   m_configObjects: {}
