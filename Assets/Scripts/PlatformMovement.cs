@@ -6,7 +6,7 @@ public class PlatformMovement : MonoBehaviour
 {
 
     public Transform[] puntosmoviles;
-    public float platformSpeed = 2f;
+    public float platformSpeed = 5f;
 
     private int siguientePunto = 0;
 
