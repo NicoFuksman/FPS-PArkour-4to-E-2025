@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2410362911370526227
+--- !u!1 &4554559034600295908
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,61 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3489300008645464849}
+  - component: {fileID: 3388530648094062443}
   m_Layer: 0
-  m_Name: Barril_Prefab
+  m_Name: Barril
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3489300008645464849
+--- !u!4 &3388530648094062443
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2410362911370526227}
+  m_GameObject: {fileID: 4554559034600295908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 97.576, y: 25.34, z: -85.819}
-  m_LocalScale: {x: 16.046295, y: 1, z: 10}
+  m_LocalPosition: {x: -2.8495271, y: 1.5276161, z: -8.887891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4481888994153739934}
+  - {fileID: 8852946834127290217}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &4481888994153606174
+--- !u!64 &4743330077350076129
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8852946834127381321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 65194f2d36485ee4798e1621b2c3607e, type: 3}
+--- !u!1001 &8852946834127414761
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3489300008645464849}
+    m_TransformParent: {fileID: 3388530648094062443}
     m_Modifications:
     - target: {fileID: 100000, guid: 65194f2d36485ee4798e1621b2c3607e, type: 3}
       propertyPath: m_Name
       value: Barril Nashe
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 65194f2d36485ee4798e1621b2c3607e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 65194f2d36485ee4798e1621b2c3607e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 65194f2d36485ee4798e1621b2c3607e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -56,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 65194f2d36485ee4798e1621b2c3607e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 65194f2d36485ee4798e1621b2c3607e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -88,9 +106,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65194f2d36485ee4798e1621b2c3607e, type: 3}
---- !u!4 &4481888994153739934 stripped
+--- !u!1 &8852946834127381321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 65194f2d36485ee4798e1621b2c3607e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8852946834127414761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8852946834127290217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 65194f2d36485ee4798e1621b2c3607e,
     type: 3}
-  m_PrefabInstance: {fileID: 4481888994153606174}
+  m_PrefabInstance: {fileID: 8852946834127414761}
   m_PrefabAsset: {fileID: 0}
