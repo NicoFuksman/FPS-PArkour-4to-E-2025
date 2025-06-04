@@ -6,7 +6,7 @@ public class ColisionConTimer : MonoBehaviour
 {
     public TIMERMANAGER timerManager; // Drag and drop en el Inspector
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter (Collider collision)
     {
         Debug.Log("Colisión con: " + collision.gameObject.name);
 
