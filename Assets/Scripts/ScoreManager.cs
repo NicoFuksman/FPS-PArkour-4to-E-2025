@@ -24,4 +24,9 @@ public class ScoreManager : MonoBehaviour
         score ++;
         manager.UpdateScore(score);
     }
+    public void AddScore(int scorePoints)
+    {
+        score += scorePoints;
+        manager.UpdateScore(score);
+    }
 }

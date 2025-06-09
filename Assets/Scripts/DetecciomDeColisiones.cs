@@ -5,10 +5,12 @@ using UnityEngine;
 public class DetecciomDeColisiones : MonoBehaviour
 {
     public ScoreManager scoreManager;
+    public Utileria utileria; 
     // Start is called before the first frame update
     void Start()
     {
         scoreManager = FindObjectOfType<ScoreManager>();
+        utileria = FindObjectOfType<Utileria>();
     }
 
     // Update is called once per frame
@@ -23,7 +25,7 @@ public class DetecciomDeColisiones : MonoBehaviour
        if (collision.gameObject.name == "Player")
         {
             Destroy(gameObject);
-            scoreManager.AddScore();
+            scoreManager.AddScore(utileria.scorePoints);
         }
     }
 }
