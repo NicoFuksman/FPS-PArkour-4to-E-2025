@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DetecciomDeColisiones : MonoBehaviour
+public class UTILERIAColision : MonoBehaviour
 {
     public ScoreManager scoreManager;
     public Utileria utileria; 

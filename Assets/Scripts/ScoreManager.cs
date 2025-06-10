@@ -6,17 +6,10 @@ public class ScoreManager : MonoBehaviour
 {
     public int score;
     public UIManager manager;
-    // Start is called before the first frame update
     void Start()
     {
         score = 0;
         manager = FindObjectOfType<UIManager>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void AddScore()

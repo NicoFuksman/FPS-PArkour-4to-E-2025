@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColisionConTimer : MonoBehaviour
+public class TIMERColision : MonoBehaviour
 {
     public TIMERMANAGER timerManager; // Drag and drop en el Inspector
 
