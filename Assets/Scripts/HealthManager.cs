@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class HealthManager : MonoBehaviour
     {
         health = 100;
         manager = FindObjectOfType<UIManager>();
+        manager.UpdateHealth(health);
     }
 
     // Update is called once per frame
@@ -26,7 +28,19 @@ public class HealthManager : MonoBehaviour
     }
     public void GetDamage(int damagePoints)
     {
-        health += damagePoints;
-        manager.UpdateHealth(health);
+        if (health + damagePoints > 0)
+        {
+            health += damagePoints;
+            manager.UpdateHealth(health);
+        }
+
+        else if (health + damagePoints <= 0)
+        {
+            health += damagePoints;
+            health = 0;
+            manager.UpdateHealth(health);
+            Debug.Log("Me mataron");
+            SceneManager.LoadScene("Parkour");
+        }
     }
 }
