@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DAÑADORColision : MonoBehaviour
+public class DamagerColision : MonoBehaviour
 {
     public HealthManager healthManager;
-    public Dañador dañador;
+    public TheDamager damager;
     // Start is called before the first frame update
     void Start()
     {
         healthManager = FindObjectOfType<HealthManager>();
-        dañador = FindObjectOfType<Dañador>();
+        damager = FindObjectOfType<TheDamager>();
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class DAÑADORColision : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            healthManager.GetDamage(dañador.damage);
+            healthManager.GetDamage(damager.damage);
         }
     }
 }
